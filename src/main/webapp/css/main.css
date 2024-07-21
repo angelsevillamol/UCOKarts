@@ -1,0 +1,156 @@
+body {
+	height: 100vh;
+	margin: 0;
+	background-color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #4a5568;
+}
+
+a {
+	color: #4a5568;
+	text-decoration: none;
+}
+
+a:link {
+	color: #4a5568;
+	text-decoration: none;
+}
+  
+a:visited {
+	color: #4a5568;
+	text-decoration: none;
+}
+  
+a:hover {
+	color: #000;
+	color: #E1261C;
+}
+  
+a:active {
+	color: #000;
+	color: #E1261C;
+}
+
+h1 {
+	color: #000;
+	font-size: 28px;
+    font-weight: 500;
+    margin-top: 0rem;
+	margin-bottom: 1.25rem;
+	margin-right: 0;
+	border-bottom: 1px solid #000;
+}
+
+h2 {
+	color: #000;
+	font-size: 20px;
+    font-weight: 500;
+    margin-top: 0rem;
+	margin-bottom: 1.25rem;
+	margin-right: 0;
+}
+
+h3 {
+	color: #4a5568;
+	font-size: 16px;
+	font-weight: 300;
+    margin-top: 1rem;
+	margin-right: 0;
+	margin-bottom: 0.5rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	padding-top: 2px;
+}
+
+ol {
+	list-style-type: yes;
+}
+
+ol li {
+	padding-top: 2px;
+}
+
+.columnas {
+    width:80%; 
+    margin-left:auto;
+    margin-right:auto;
+    display: flex; 
+    flex-direction:row;
+    margin-bottom:10rem;
+    margin-top:2rem;
+    font-size:.875rem;
+    line-height:1.5;
+    overflow: auto;
+}
+
+.col-izquierda {
+    width:25%; 
+    margin-top:5rem;
+    margin-right:2rem;
+    padding-right:1.5rem;
+}
+
+.col-central {
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.columna {
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom:5rem;
+	flex-direction:row;
+	margin-left:auto;
+	margin-right:auto;
+	justify-content: center;
+}
+
+.caja {
+	width: 100%;
+	margin-right: 0rem;
+	padding: 1.5rem;
+	border: 1px solid #999999;
+	background-color: #fff;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.overlay {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.mensaje-error-on {
+	font-size: 14px;
+	height: auto;
+	visibility: visible;
+	color: #4a5568;
+}
+
+.mensaje-error-off {
+	visibility: hidden;
+	height: 0;
+}
+

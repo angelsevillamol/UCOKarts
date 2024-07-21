@@ -1,0 +1,32 @@
+.margin-footer {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	height: 5vh;
+}
+
+footer {
+	bottom: 0;
+	width: 100%;
+	height: 3.5vh;
+	margin-top: 6rem;
+	padding: 0;
+	background-color: #000;
+	background-size: cover;
+	color: #E6E6E6;
+	font-size: 14px;
+	padding: 45px 0;
+	position: fixed;
+}
+
+footer .row {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5rem;
+}
+
+footer .linkstatic {
+	color:#E6E6E6;
+	margin-right: 10px;
+	margin-left: 10px;	
+}
+  

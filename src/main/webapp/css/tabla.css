@@ -1,0 +1,32 @@
+.tabla {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left:auto; 
+    margin-right:auto; 
+}
+
+.tabla thead tr {
+    background-color: #666b7f;
+    color: #ffffff;
+    text-align: left;
+}
+
+.tabla th, .tabla td {
+    padding: 12px 15px;
+}
+
+.tabla tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabla tbody tr:last-of-type {
+    border-bottom: 1px solid #999999;
+}

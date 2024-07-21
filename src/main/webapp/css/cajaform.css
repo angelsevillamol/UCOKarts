@@ -1,0 +1,144 @@
+.caja {
+	width: 100%;
+	margin-right: 0rem;
+	padding: 1.5rem;
+	border: 1px solid #999999;
+	background-color: #fff;
+	box-sizing: border-box;
+	overflow: visible;
+}
+
+.caja .contenedor-cm {
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+  
+.caja .contenedor-cm input[type=checkbox] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+  
+.caja .contenedor-cm .checkmark {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	border: 1px solid #4a5568;
+}
+  
+.caja .contenedor-cm .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.caja .contenedor-cm input:checked ~ .checkmark:after {
+	display: block;
+}
+  
+.caja .contenedor-cm .checkmark:after {
+	left: 3px;
+	top: 0px;
+	width: 3.5px;
+	height: 7px;
+	border: 1px solid #4a5568;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.caja input[type=text], input[type=number], input[type=password] , input[type=email], input[type=date] {
+	width: calc(100% - 1.25rem);
+    font-size: 14px;
+	border: 0;
+    border-bottom: 1px solid #999999;
+	font-family: 'Poppins', sans-serif;
+    color: #4a5568;
+    padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-left: 1.25rem;
+}
+
+.caja input:focus {
+    outline: none;
+}
+
+.caja input:disabled {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.caja input[readonly="readonly"] {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.caja input[type=submit] {
+	width: 100%;
+	margin-top: .75rem;
+	background-color: #fff;
+	border: 1px solid #999999;
+	color: #4a5568;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 1rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.caja input[type=submit]:hover {
+	background-color: #E1261C;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.caja input[type=submit]:disabled {
+    background-color: #666b7f;
+    color: #aaa;
+}
+
+.caja .contenedor-txtarea {
+  width: 100%;
+  display: inline;
+  overflow: auto;
+  resize: height;
+}
+
+.caja .contenedor-txtarea > textarea {
+	min-height: 60px;
+	width: inherit;
+	max-width: 100%;
+    font-size: 14px;
+    border: 1px solid #999999;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-left: 1.25rem;
+	font-family: 'Poppins', sans-serif;
+    color: #4a5568;
+    background-color: #fff;
+    resize: vertical;
+    overflow: auto;
+    resize: height;
+}
+
+.caja .tab-informacion .etiqueta {
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.caja .tab-informacion .valor-etiqueta {
+	font-weight: 300;
+}
+

@@ -1,0 +1,59 @@
+/**
+ * Custom-select modificado originalmente extraido de W3School
+ * https://www.w3schools.com/howto/howto_custom_select.asp
+ */
+
+.custom-select {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #fff;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #999999 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #999999 transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  color: #4a5568;
+  padding: 8px 16px;
+  border: 0;
+  border-bottom: 1px solid #999999;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
